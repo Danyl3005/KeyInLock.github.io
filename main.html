@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key In Lock</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="logo/png" href="img/Logo-small.png">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="rooms.js"></script>
+</head>
+
+<body class="menu-body">
+    <div class="header">
+        <div class="header-top">
+            <div class="header-top-logo">
+                <a href="main.html"><img src="https://i.ibb.co/4NpSzWd/pngwing-com.png" alt=""></a>
+            </div>
+            <div class="header-top-menu">
+                <a href="main.html"><p class="header-top-menu-text-1">ГОЛОВНА</p></a>
+                <a href="rooms.html"><p class="header-top-menu-text-2">КІМНАТИ</p></a>
+                <a href="contacts.html"><p class="header-top-menu-text-3">КОНТАКТИ</p></a>
+            </div>
+        </div>
+        <div class="header-ractangle"></div>
+    </div>
+    <div class="test-1" onclick="openRooms1()">
+      <!--<p class="text-test">Ви мандрівники які залишилися на ночівлю в покинутому будинку, але в ньому щось відбувалося дивне, ваше завдання протриматися до ранку й розкрити усі його таємниці.</p>-->
+    </div>
+    <div class="test-2" onclick="openRooms2()">
+      <!--<p class="text-test">Ви – жителі Монстрополіса, місто, яке одержує енергію від криків дітей. Але останнім часом діти стали менш сприйнятливими до страху. Лякати стало все складніше, і корпорацією було ухвалено рішення запровадити експериментальну команду. Ось тільки місто монстрів знаходиться на межі катастрофи. Щохвилини рівень енергії падає..Чи зможете ви підняти це рівень енергії?</p>-->
+    </div>
+    <div class="test-3" onclick="openRooms3()">
+      <!--<p class="text-test">Ви шукачі предметів старовини і потрапили в будинок колекціонера, за нашими відомостями десь у глибині його будинку  схований найбільший скарб, Ваше завдання знайти його адже час у Вас обмежений.</p>-->
+    </div>
+    <div class="sixth-screen">
+        <div class="sixth-screen-title">
+            <p class="sixth-screen-title-text">Відкрийте для себе гострі відчуття пригод</p>
+        </div>
+        <p class="sixth-screen-main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam elementum pulvinar etiam non quam lacus suspendisse faucibus interdum. Quisque non tellus orci ac auctor. At imperdiet dui accumsan sit amet nulla facilisi. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Libero id faucibus nisl tincidunt eget nullam non nisi. Est ante in nibh mauris. Tellus id interdum velit laoreet. Eu scelerisque felis imperdiet proin. Aliquet eget sit amet tellus cras. Luctus accumsan tortor posuere ac. Ultrices gravida dictum fusce ut.</p>
+        </div>
+    <div class="rooms-1-pop-up">
+        <div class="rooms-1-pop-up-frame">
+            <div class="rooms-1-pop-up-frame-title">Дитяча</div>
+            <div class="rooms-1-pop-up-frame-line-1">
+                <div class="children"></div></div>
+            <div class="rooms-1-pop-up-frame-line-2">
+                <p class="children-text">Ви – жителі Монстрополіса, місто, яке одержує енергію від криків дітей. Але останнім часом діти стали менш сприйнятливими до страху. Лякати стало все складніше, і корпорацією було ухвалено рішення запровадити експериментальну команду. Ось тільки місто монстрів знаходиться на межі катастрофи. Щохвилини рівень енергії падає..Чи зможете ви підняти це рівень енергії?</div>
+            <div class="rooms-1-pop-up-frame-rectangle"></div>
+            <img src="https://i.ibb.co/BqRgTV7/Close.png" class="rooms-1-pop-up-frame-close" onclick="closeRooms1()">
+        </div>
+        <div class="rooms-1-pop-up-rectangle-grey" onclick="closeRooms1()"></div>
+    </div>
+    <div class="rooms-2-pop-up">
+        <div class="rooms-2-pop-up-frame">
+            <div class="rooms-2-pop-up-frame-title">Проклятий Дім</div>
+            <div class="rooms-2-pop-up-frame-line-1">
+                <div class="house"></div></div>
+            <div class="rooms-2-pop-up-frame-line-2">
+                <p class="house-text">Ви мандрівники які залишилися на ночівлю в покинутому будинку, але в ньому щось відбувалося дивне, ваше завдання протриматися до ранку й розкрити усі його таємниці.</div>
+            <div class="rooms-2-pop-up-frame-rectangle"></div>
+            <img src="https://i.ibb.co/BqRgTV7/Close.png" class="rooms-2-pop-up-frame-close" onclick="closeRooms2()">
+        </div>
+        <div class="rooms-2-pop-up-rectangle-grey" onclick="closeRooms2()"></div>
+    </div>
+    <div class="rooms-3-pop-up">
+        <div class="rooms-3-pop-up-frame">
+            <div class="rooms-3-pop-up-frame-title">Колекціонер</div>
+            <div class="rooms-3-pop-up-frame-line-1">
+                <div class="collector"></div></div>
+            <div class="rooms-3-pop-up-frame-line-2">
+                <p class="collector-text">Ви шукачі предметів старовини і потрапили в будинок колекціонера, за нашими відомостями десь у глибині його будинку  схований найбільший скарб, Ваше завдання знайти його адже час у Вас обмежений.</div>
+            <div class="rooms-3-pop-up-frame-rectangle"></div>
+            <img src="https://i.ibb.co/BqRgTV7/Close.png" class="rooms-3-pop-up-frame-close" onclick="closeRooms3()">
+        </div>
+        <div class="rooms-3-pop-up-rectangle-grey" onclick="closeRooms3()"></div>
+    </div>
+    <div class="footer">
+        <div class="logo-copyrights">
+            <div class="logo-footer">
+                <img src="https://i.ibb.co/F8RhDyC/pngwing.png">
+            </div>
+            <div class="copyrights-footer">
+                <p>© Всі права захищені --- 2023</p>
+            </div>
+        </div>
+
+        <div class="main-contacts-footer">
+            <p class="contacts-text">Контакти</p>
+            <p class="contacts-adress">Україна, м. Кременчук, <br>адреса</p>
+            <p class="contacts-number" img class="footer-phone-img" src="img/number.png">+38 (номер)</p>
+            <p class="contacts-email">пошта</p>
+        </div>
+
+        <div class="work-time">
+            <p class="work-time-text">Часи роботи</p>
+            <p class="work-timing">Пн-Пт: 10:00-17:00</p>
+            <p class="work-weekend">Сб: 10:00-13:00</p>
+            <p class="weekend">Нд: вихідний</p>
+            <a class="call" href="call.html"><p class="call">Зателефонувати Вам?</p></a>
+        </div>
+
+        <div class="social">
+            <p class="our-social">Ми у соцмережах</p>
+            <div class="icons">
+                <a href="https://www.facebook.com"><img src="img/facebook.png"></a>
+                <a href="https://www.instagram.com"><img src="img/instagram.png"></a>
+                <a href="https://www.telegram.com"><img src="https://i.ibb.co/cwT0h3F/pngwing-com-1.png"></a>
+            </div>
+        </div>
+
+        <div class="footer-rectangle"></div>
+    </div>
+</body>
+</html>
